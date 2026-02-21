@@ -1,0 +1,677 @@
+{
+  "kind": "build_request",
+  "title": "Build AXOPAY Digital Wallet Platform with Referral & Binary Reward System",
+  "projectName": "AXOPAY Wallet",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create public website landing page with hero section displaying headline 'Borderless Payments. Limitless Possibilities.', subtext 'Modern digital finance platform for global transactions', Get Started and Login buttons, and visual elements representing secure shield and digital network",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Hero Section: Headline: Borderless Payments. Limitless Possibilities. Subtext: Modern digital finance platform for global transactions Buttons: Get Started • Login Visual: Secure shield + digital network"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays the exact headline and subtext",
+        "Both Get Started and Login buttons are functional",
+        "Visual design incorporates secure shield and digital network imagery"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create About section on public website explaining AXOPAY capabilities: global money transfer, payment receiving, instant currency swap, and unified multi-currency wallet",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "About: AXOPAY Wallet enables: Global money transfer, Payment receiving, Instant currency swap, One secure multi-currency wallet"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About section lists all four key capabilities",
+        "Content is clearly structured and readable"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create Problem-Solution section on public website contrasting problems (Expensive, Slow, Complex, Limited access) with solutions (International payment gateway, Multi-currency support, Instant swap, Unified wallet, Cyber-security focus)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Problem → Solution: Problems: Expensive • Slow • Complex • Limited access Solutions: International payment gateway • Multi-currency support • Instant swap • Unified wallet • Cyber-security focus"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Problems are displayed with clear visual distinction from solutions",
+        "All five solutions are listed"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create Security & Trust section on public website highlighting end-to-end encryption, secure infrastructure, fraud detection, and advanced monitoring",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Security & Trust: End-to-end encryption • Secure infrastructure • Fraud detection • Advanced monitoring"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All four security features are displayed",
+        "Section conveys trust and security visually"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create Global Capability section on public website explaining international payment acceptance, multi-currency processing, and scalable global gateway",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Global Capability: Accept international payments • Multi-currency processing • Scalable global gateway"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All three capabilities are listed",
+        "Content emphasizes global reach"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create Plans & Benefits section on public website displaying three investment plans: BEGIN ($100), GROW ($300), PEAK ($500), with example showing 5% daily returns for 30 days",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Plans & Benefits: BEGIN $100 • GROW $300 • PEAK $500 Example: 5% daily × 30 days"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All three plans are displayed with their prices",
+        "ROI example (5% daily × 30 days) is clearly shown",
+        "Plans are visually distinct and easy to compare"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create Referral System section on public website explaining 10% direct bonus, multi-level earnings, binary pairing rewards with pair income ($10/$30/$50), daily limits, and milestone rewards",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Referral System: 10% direct bonus • Multi-level earnings • Binary pairing rewards Pair income: $10 / $30 / $50 • Daily limits • Milestone rewards"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Referral bonus percentage (10%) is displayed",
+        "Binary pair income amounts are shown for all three tiers",
+        "Daily limits and milestone rewards are mentioned"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create final CTA section on public website with headline 'Join AXOPAY Today — Secure Your Financial Future' and Create Account and Login buttons",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Final CTA: Join AXOPAY Today — Secure Your Financial Future Buttons: Create Account • Login"
+        ]
+      },
+      "acceptanceCriteria": [
+        "CTA headline is displayed prominently",
+        "Both buttons are functional and styled distinctly"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Implement client authentication system with login form accepting email/username and password, OTP verification step, and forgot password functionality",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Client Access: Login fields: Email / Username, Password, OTP verification, Forgot password"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Login form accepts both email and username",
+        "OTP verification is required after password entry",
+        "Forgot password flow allows password reset",
+        "Backend validates credentials and generates OTP"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement client sign-up system collecting name, email, phone, password, country, and optional referral ID, with backend actions to create wallet, generate unique user ID, link sponsor, and verify via OTP",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Sign-up: Registration data: Name • Email • Phone • Password • Country • Referral ID (optional) System actions: Create wallet • Generate user ID • Link sponsor • Verify via OTP"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Registration form collects all required fields",
+        "Referral ID field is optional",
+        "Backend creates wallet with initial balance structure (Main, Earnings, Withdrawal)",
+        "Unique user ID is generated and stored",
+        "Referral link to sponsor is established if referral ID provided",
+        "OTP is sent and verified before account activation"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Implement separate admin authentication portal with login form accepting admin ID and password, mandatory 2FA verification, and optional IP restriction enforcement",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Admin Access: Separate secure portal: Admin ID, Password, Mandatory 2FA, Optional IP restriction"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Admin login is on a separate route from client login",
+        "Admin ID and password are required",
+        "2FA is enforced for all admin logins",
+        "IP restriction can be configured and enforced per admin account"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Create client dashboard main overview displaying wallet balance, active plan, ROI progress, total earnings, referral income, binary income, withdrawable balance, team size, and recent transactions",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Main Overview: Wallet balance • Active plan • ROI progress • Total earnings Referral income • Binary income • Withdrawable balance Team size • Recent transactions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All metrics are displayed on the dashboard",
+        "Data is fetched from backend and updated in real-time",
+        "Recent transactions show at least the last 5-10 entries"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Implement wallet features allowing users to deposit funds, withdraw funds, perform internal transfers between users, convert currencies, and view transaction history, with three wallet types: Main, Earnings, and Withdrawal",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Wallet Features: Deposit funds • Withdraw funds • Internal transfer Currency conversion • Transaction history Recommended wallet types: Main • Earnings • Withdrawal"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can initiate deposits with external gateway integration placeholder",
+        "Withdrawal requests are created and pending admin approval",
+        "Internal transfers move funds between user accounts instantly",
+        "Currency conversion uses configured exchange rates",
+        "Transaction history shows all wallet activity with filters",
+        "Three distinct wallet balances (Main, Earnings, Withdrawal) are maintained and displayed"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Implement plan management system allowing users to purchase or upgrade investment plans (BEGIN $100, GROW $300, PEAK $500), view ROI tracker showing daily returns progress, display plan expiry date, and provide repurchase option",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Plan Management: Purchase or upgrade plan • ROI tracker • Plan expiry view • Repurchase option"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can select and purchase from the three plan tiers",
+        "ROI tracker shows accumulated returns and remaining days",
+        "Plan expiry date is clearly displayed",
+        "Repurchase button is enabled when plan expires or is near expiry",
+        "Backend deducts plan cost from Main wallet and activates the plan"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Implement ROI engine that automatically calculates and credits daily returns based on plan percentage (5% daily example) until plan expiry (30 days), crediting earnings to the Earnings wallet",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "ROI Engine: Automated daily returns until plan expiry",
+          "Example: 5% daily × 30 days"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend scheduler runs daily to process ROI for active plans",
+        "Daily percentage is configurable per plan",
+        "Returns are credited to Earnings wallet",
+        "Plan expires after configured duration",
+        "ROI history is logged for audit"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Implement referral module displaying personal referral link with user's referral ID, downline list showing directly referred users, team tree visualization with hierarchical structure, and referral earnings summary",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Referral Module: Personal referral link • Downline list • Team tree visualization • Referral earnings"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Referral link includes user's unique referral ID",
+        "Link is copyable and shareable",
+        "Downline list shows all direct referrals with join date and status",
+        "Team tree visualizes multi-level referral hierarchy",
+        "Referral earnings display total earned from direct referrals (10% bonus)"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Implement binary system with left and right team structure, pair matching logic that calculates matching volume, daily payout limits, binary income tracking, and volume carry-forward for unmatched volume",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Binary System: Left & right team structure • Pair matching • Daily limits Binary income • Volume carry-forward"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each user has left and right leg placement in binary tree",
+        "New referrals are assigned to weaker leg or next available position",
+        "Pair matching engine calculates matched volume daily",
+        "Binary income is credited based on matched pairs (amount per plan tier)",
+        "Daily limits prevent excessive payouts",
+        "Unmatched volume carries forward to next day",
+        "Frontend displays left/right team size and volumes"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Implement binary matching engine that matches left and right leg volumes, applies daily payout limits, credits binary earnings based on plan tier ($10 for BEGIN, $30 for GROW, $50 for PEAK per pair), and carries forward unmatched volume",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Binary Matching Engine: Matches left/right volumes, applies limits, credits earnings",
+          "Pair income: $10 / $30 / $50"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Engine runs daily or on-demand",
+        "Calculates smaller of left/right volume as matched pairs",
+        "Credits appropriate pair income to Earnings wallet",
+        "Enforces configured daily limit",
+        "Excess volume rolls over to next period",
+        "Logs all matching calculations"
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "text": "Implement rewards section displaying milestone rewards with progress indicators showing advancement toward goals, and claimed rewards history",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Rewards Section: Milestone rewards • Progress indicators • Claimed rewards history"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Milestones are displayed with target criteria and reward amounts",
+        "Progress bars or indicators show current advancement",
+        "Users can claim rewards when milestones are achieved",
+        "Claimed rewards history shows date and amount",
+        "Backend validates milestone completion before payout"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Implement reward engine that triggers payouts automatically when users achieve defined milestones (team size, volume, earnings thresholds), crediting rewards to Earnings wallet",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Reward Engine: Triggers payouts when milestones are achieved"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Engine monitors milestone criteria continuously",
+        "Automatically credits rewards when milestones are met",
+        "Prevents duplicate payouts for the same milestone",
+        "Logs all milestone achievements and payouts"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Implement earnings and transactions section displaying income categorized by type (ROI, Referral, Binary, Rewards) with filters for date range, transaction type, and status",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Earnings & Transactions: Income categories: ROI • Referral • Binary • Rewards Filters: Date • Type • Status"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All income types are categorized and displayed separately",
+        "Date range filter allows custom start and end dates",
+        "Type filter allows filtering by income category",
+        "Status filter shows pending, completed, or rejected transactions",
+        "Transaction list is paginated and sortable"
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Implement profile and settings section allowing users to update personal information, change password, configure security settings, optionally complete KYC verification, and manage notification preferences",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Profile & Settings: Personal info • Password change • Security settings • Optional KYC • Notifications"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can update name, phone, and country",
+        "Password change requires current password verification",
+        "Security settings include 2FA toggle",
+        "KYC upload form accepts documents (optional)",
+        "Notification preferences control email and in-app alerts"
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Create admin panel overview dashboard displaying total users count, active users count, new registrations count, total deposits amount, total withdrawals amount, platform revenue, and pending approvals count",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Admin Overview: Total users • Active users • New registrations Deposits • Withdrawals • Platform revenue • Pending approvals"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All seven metrics are displayed with current values",
+        "Metrics update in real-time or on page refresh",
+        "Charts or visualizations enhance data presentation"
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "text": "Implement admin user management allowing viewing user details, activating or suspending accounts, resetting passwords, adjusting wallet balances manually, modifying active plans, and viewing referral trees",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "User Management: View user details • Activate or suspend accounts Reset passwords • Adjust balances • Modify plans • View referrals"
+        ]
+      },
+      "acceptanceCriteria": [
+        "User list shows all registered users with search and filter",
+        "User detail view displays complete profile and wallet information",
+        "Admin can activate/suspend accounts with reason logging",
+        "Password reset generates new credentials and notifies user",
+        "Balance adjustment form updates specified wallet type",
+        "Plan modification allows changing current plan or extending duration",
+        "Referral tree view shows user's entire downline"
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "text": "Implement admin financial control allowing approval or rejection of deposit requests with optional manual entry, and approval or rejection of withdrawal requests with processing status tracking",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Financial Control: Deposits: Approve • Reject • Manual entry Withdrawals: Approve • Reject • Track processing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Deposit queue displays pending deposit requests",
+        "Admin can approve deposits which credit user's Main wallet",
+        "Admin can reject deposits with reason",
+        "Manual deposit entry allows adding funds directly to user account",
+        "Withdrawal queue displays pending withdrawal requests",
+        "Admin can approve withdrawals which deduct from Withdrawal wallet",
+        "Admin can reject withdrawals with reason",
+        "Processing status tracks approval, payment processing, and completion"
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "text": "Implement admin plan management allowing creation of new investment plans, editing existing plans (ROI percentage, duration, price), and enabling or disabling plan availability",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Plan Management: Create or edit plans • Set ROI percentage • Set duration • Enable/disable plans"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Plan creation form accepts name, price, ROI percentage, and duration in days",
+        "Existing plans can be edited (changes apply to new purchases only)",
+        "Plans can be enabled or disabled to control user visibility",
+        "Plan list shows all configured plans with current status"
+      ]
+    },
+    {
+      "id": "REQ-27",
+      "text": "Implement admin referral and binary configuration allowing setting of referral bonus percentage, binary pair matching rules, daily payout limits, and volume carry-forward logic",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Referral & Binary Configuration: Set referral percentage • Pair rules • Daily limits • Carry-forward logic"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Referral percentage is globally configurable (default 10%)",
+        "Binary pair income is configurable per plan tier",
+        "Daily limit for binary earnings is configurable",
+        "Carry-forward toggle enables or disables volume rollover",
+        "Configuration changes are logged and effective immediately"
+      ]
+    },
+    {
+      "id": "REQ-28",
+      "text": "Implement admin rewards management allowing definition of milestone criteria (team size, volume, earnings), configuration of reward amounts, and tracking of milestone payouts",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Rewards Management: Define milestones • Configure reward amounts • Track payouts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Milestone creation form accepts title, criteria type, threshold value, and reward amount",
+        "Existing milestones can be edited or deleted",
+        "Payout history shows all milestone achievements with user and date",
+        "Admin can manually trigger milestone rewards"
+      ]
+    },
+    {
+      "id": "REQ-29",
+      "text": "Implement admin reports and analytics showing revenue reports, user growth charts, earnings distribution by type, transaction logs with filters, and CSV export functionality",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Reports & Analytics: Revenue reports • User growth • Earnings distribution • Transaction logs • Export options"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Revenue report shows deposits, withdrawals, and net revenue over time",
+        "User growth chart displays registration trends",
+        "Earnings distribution pie or bar chart shows ROI, Referral, Binary, and Rewards breakdown",
+        "Transaction logs are searchable and filterable by date, type, and user",
+        "Export button generates CSV download of filtered data"
+      ]
+    },
+    {
+      "id": "REQ-30",
+      "text": "Implement admin notifications system allowing creation of system announcements visible to all users, sending of email campaigns to selected user segments, and platform alerts for important events",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Notifications: System announcements • Email campaigns • Platform alerts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Announcement form creates messages displayed on user dashboards",
+        "Email campaign interface allows selecting recipients and composing messages",
+        "Platform alerts are triggered automatically for key events (large deposits, suspicious activity)",
+        "Notification history shows all sent messages"
+      ]
+    },
+    {
+      "id": "REQ-31",
+      "text": "Implement wallet engine in backend handling balance tracking for three wallet types (Main, Earnings, Withdrawal), internal transfers between users, transaction fees calculation, and currency conversion using configured exchange rates",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Wallet Engine: Handles balances, transfers, fees, and conversions"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each user has three separate wallet balances stored and tracked",
+        "Internal transfers validate sender balance and recipient existence",
+        "Transaction fees are deducted according to configuration",
+        "Currency conversion applies current exchange rates",
+        "All wallet operations are atomic and logged"
+      ]
+    },
+    {
+      "id": "REQ-32",
+      "text": "Implement security features including strong password hashing using industry-standard algorithms, withdrawal verification requiring OTP or 2FA, fraud monitoring for suspicious activity patterns, admin activity logging, rate limiting on sensitive endpoints, and automated backup systems",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "SECURITY FEATURES: HTTPS encryption • Strong password hashing • 2FA Withdrawal verification • Fraud monitoring Admin activity logs • Rate limiting • Backup systems"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Passwords are hashed with salt before storage",
+        "Withdrawal requests trigger OTP verification",
+        "Backend monitors for unusual transaction patterns",
+        "All admin actions are logged with timestamp and admin ID",
+        "Rate limiting prevents brute force attacks on login",
+        "Backup mechanism ensures data recovery capability"
+      ]
+    },
+    {
+      "id": "REQ-33",
+      "text": "Apply a cohesive visual design system to the entire platform with a professional, modern aesthetic suitable for financial services, using a distinctive color palette (avoiding blue and purple unless specified), consistent typography, and layout patterns that reinforce trust and clarity throughout the public website, client dashboard, and admin panel",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A unified color palette is applied across all pages",
+        "Typography choices enhance readability and hierarchy",
+        "Layout patterns are consistent and professional",
+        "Design conveys trust, security, and modernity",
+        "Visual style is distinct and not generic blue/purple"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use Motoko for all backend logic in a single main actor",
+    "Use React with TypeScript, Tailwind CSS, and React Query for frontend",
+    "Do not modify read-only UI component sources in frontend/src/components/ui",
+    "Do not integrate external payment gateways; implement placeholder deposit/withdrawal flows",
+    "Do not implement real-time WebSocket features; use polling for live updates",
+    "Do not implement SMS or email sending; simulate OTP and email notifications",
+    "Do not implement KYC verification backend; accept document uploads to placeholder storage"
+  ],
+  "nonGoals": [
+    "Mobile application development",
+    "Cryptocurrency wallet integration",
+    "Third-party authentication providers (Facebook, Google, GitHub)",
+    "Real-time chat or messaging features",
+    "Integration with external blockchain networks",
+    "Automated KYC verification with third-party services",
+    "AI-based fraud detection algorithms",
+    "Merchant payment APIs for external businesses",
+    "Multi-language internationalization"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hero section background featuring secure shield and digital network abstract visualization with gradient overlay (hero-bg.dim_1920x1080.png)",
+      "Modern secure shield icon with digital elements for security section (shield-icon.dim_256x256.png)",
+      "Abstract global network illustration representing worldwide connectivity (global-network.dim_800x600.png)",
+      "Professional financial growth chart illustration for plans section (growth-chart.dim_600x400.png)",
+      "Binary tree structure diagram icon for referral system visualization (binary-tree.dim_400x400.png)"
+    ],
+    "edits": []
+  }
+}

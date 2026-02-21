@@ -1,0 +1,300 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T10:39:08.055Z",
+  "summary": "The diff shows a partial implementation focused on frontend scaffolding and routing. Basic layouts, authentication hooks, and placeholder admin/client pages are present. However, the BuildRequest demands extensive backend logic (Motoko actors for wallets, ROI engines, binary matching, reward engines), complete frontend pages with all specified content, and full integration. The diff is heavily truncated, making it difficult to verify most requirements. Based on visible evidence, many core features are missing or incomplete.",
+  "missing_requirements": [
+    {
+      "id": "REQ-1",
+      "requirement": "Create public website landing page with hero section displaying headline 'Borderless Payments. Limitless Possibilities.', subtext 'Modern digital finance platform for global transactions', Get Started and Login buttons, and visual elements representing secure shield and digital network",
+      "reason": "LandingPage.tsx is referenced in routing but file content is not provided in the diff",
+      "evidence": [
+        "frontend/src/App.tsx"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "requirement": "Create About section on public website explaining AXOPAY capabilities",
+      "reason": "No evidence of About section implementation in any visible file",
+      "evidence": []
+    },
+    {
+      "id": "REQ-3",
+      "requirement": "Create Problem-Solution section on public website",
+      "reason": "No evidence of Problem-Solution section in any visible file",
+      "evidence": []
+    },
+    {
+      "id": "REQ-4",
+      "requirement": "Create Security & Trust section on public website",
+      "reason": "No evidence of Security & Trust section in any visible file",
+      "evidence": []
+    },
+    {
+      "id": "REQ-5",
+      "requirement": "Create Global Capability section on public website",
+      "reason": "No evidence of Global Capability section in any visible file",
+      "evidence": []
+    },
+    {
+      "id": "REQ-6",
+      "requirement": "Create Plans & Benefits section on public website displaying three investment plans",
+      "reason": "No evidence of Plans & Benefits section in any visible file",
+      "evidence": []
+    },
+    {
+      "id": "REQ-7",
+      "requirement": "Create Referral System section on public website explaining bonuses and rewards",
+      "reason": "No evidence of Referral System section on public website in any visible file",
+      "evidence": []
+    },
+    {
+      "id": "REQ-8",
+      "requirement": "Create final CTA section on public website with headline 'Join AXOPAY Today — Secure Your Financial Future'",
+      "reason": "No evidence of CTA section in any visible file",
+      "evidence": []
+    },
+    {
+      "id": "REQ-9",
+      "requirement": "Implement client authentication system with login, OTP verification, and forgot password functionality",
+      "reason": "LoginPage and ForgotPasswordPage are referenced but not shown; no backend validation or OTP generation logic visible in backend/main.mo",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "requirement": "Implement client sign-up system with wallet creation, unique user ID generation, sponsor linking, and OTP verification",
+      "reason": "SignupPage is referenced but not shown; backend/main.mo shows no user registration, wallet creation, or OTP logic",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "requirement": "Implement separate admin authentication portal with 2FA and optional IP restriction",
+      "reason": "AdminLoginPage exists but shows no 2FA enforcement logic; backend has no admin authentication or IP restriction implementation",
+      "evidence": [
+        "frontend/src/pages/admin/AdminLoginPage.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "requirement": "Create client dashboard displaying wallet balance, active plan, ROI progress, earnings, team size, and recent transactions",
+      "reason": "DashboardPage uses mock data with no backend integration; no queries or API calls to fetch real data",
+      "evidence": [
+        "frontend/src/pages/client/DashboardPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "requirement": "Implement wallet features for deposit, withdrawal, internal transfers, currency conversion, and transaction history with three wallet types",
+      "reason": "WalletPage is referenced but not shown; backend/main.mo has no wallet engine, transaction, or currency conversion logic",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "Implement plan management system for purchasing/upgrading plans with ROI tracker and repurchase option",
+      "reason": "PlansPage is referenced but not shown; backend has no plan purchase, ROI tracking, or expiry logic",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "requirement": "Implement ROI engine that automatically calculates and credits daily returns",
+      "reason": "Backend/main.mo shows no ROI calculation engine, scheduler, or earnings crediting logic",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "requirement": "Implement referral module with personal referral link, downline list, team tree, and earnings summary",
+      "reason": "ReferralPage is referenced but not shown; backend has no referral tracking or downline management",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "requirement": "Implement binary system with left/right team structure, pair matching, daily limits, and carry-forward",
+      "reason": "BinaryPage shows mock data only; backend has no binary tree placement or matching logic",
+      "evidence": [
+        "frontend/src/pages/client/BinaryPage.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "requirement": "Implement binary matching engine that calculates matched pairs and credits earnings",
+      "reason": "Backend/main.mo shows no binary matching engine or pair calculation logic",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "requirement": "Implement rewards section displaying milestone rewards with progress indicators",
+      "reason": "RewardsPage is referenced but not shown; no milestone or progress tracking in backend",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "requirement": "Implement reward engine that triggers payouts when milestones are achieved",
+      "reason": "Backend/main.mo shows no milestone monitoring or automatic payout logic",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "requirement": "Implement earnings and transactions section with filters and categorization",
+      "reason": "EarningsPage is referenced but not shown; no transaction filtering or categorization in backend",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "requirement": "Implement profile and settings section for updating information and security settings",
+      "reason": "ProfilePage is referenced but not shown; backend has no user profile update or KYC handling",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "requirement": "Create admin panel overview dashboard with metrics and charts",
+      "reason": "AdminDashboard shows hardcoded mock metrics with no backend integration or real-time data fetching",
+      "evidence": [
+        "frontend/src/pages/admin/AdminDashboard.tsx"
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "requirement": "Implement admin user management with account controls and balance adjustments",
+      "reason": "UserManagementPage shows placeholder content only; no user list, detail view, or management actions implemented",
+      "evidence": [
+        "frontend/src/pages/admin/UserManagementPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-25",
+      "requirement": "Implement admin financial control for approving deposits and withdrawals",
+      "reason": "FinancialControlPage shows placeholder content only; no approval queues or transaction processing",
+      "evidence": [
+        "frontend/src/pages/admin/FinancialControlPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-26",
+      "requirement": "Implement admin plan management for creating and editing investment plans",
+      "reason": "PlanManagementPage shows placeholder content only; no plan creation or editing interface",
+      "evidence": [
+        "frontend/src/pages/admin/PlanManagementPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-27",
+      "requirement": "Implement admin referral and binary configuration interface",
+      "reason": "ReferralBinaryConfigPage shows placeholder content only; no configuration forms or settings",
+      "evidence": [
+        "frontend/src/pages/admin/ReferralBinaryConfigPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-28",
+      "requirement": "Implement admin rewards management for defining and tracking milestones",
+      "reason": "RewardsManagementPage shows placeholder content only; no milestone configuration interface",
+      "evidence": [
+        "frontend/src/pages/admin/RewardsManagementPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-29",
+      "requirement": "Implement admin reports and analytics with charts and CSV export",
+      "reason": "ReportsPage shows placeholder content only; no analytics, charts, or export functionality",
+      "evidence": [
+        "frontend/src/pages/admin/ReportsPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-30",
+      "requirement": "Implement admin notifications system for announcements and campaigns",
+      "reason": "NotificationsPage shows placeholder content only; no notification creation or sending interface",
+      "evidence": [
+        "frontend/src/pages/admin/NotificationsPage.tsx"
+      ]
+    },
+    {
+      "id": "REQ-31",
+      "requirement": "Implement wallet engine in backend for balance tracking, transfers, fees, and currency conversion",
+      "reason": "Backend/main.mo shows only storage and authorization mixins; no wallet engine implementation",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-32",
+      "requirement": "Implement security features including password hashing, withdrawal verification, fraud monitoring, and rate limiting",
+      "reason": "Backend/main.mo shows no security implementation; no password hashing, OTP verification, or rate limiting logic",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.75,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/layout/AdminLayout.tsx",
+    "frontend/src/components/layout/MainLayout.tsx",
+    "frontend/src/components/layout/PublicLayout.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/ForgotPasswordPage.tsx",
+    "frontend/src/pages/LandingPage.tsx",
+    "frontend/src/pages/LoginPage.tsx",
+    "frontend/src/pages/SignupPage.tsx",
+    "frontend/src/pages/admin/AdminDashboard.tsx",
+    "frontend/src/pages/admin/AdminLoginPage.tsx",
+    "frontend/src/pages/admin/FinancialControlPage.tsx",
+    "frontend/src/pages/admin/NotificationsPage.tsx",
+    "frontend/src/pages/admin/PlanManagementPage.tsx",
+    "frontend/src/pages/admin/ReferralBinaryConfigPage.tsx",
+    "frontend/src/pages/admin/ReportsPage.tsx",
+    "frontend/src/pages/admin/RewardsManagementPage.tsx",
+    "frontend/src/pages/admin/UserManagementPage.tsx",
+    "frontend/src/pages/client/BinaryPage.tsx",
+    "frontend/src/pages/client/DashboardPage.tsx",
+    "frontend/src/pages/client/EarningsPage.tsx",
+    "frontend/src/pages/client/PlansPage.tsx",
+    "frontend/src/pages/client/ProfilePage.tsx",
+    "frontend/src/pages/client/ReferralPage.tsx",
+    "frontend/src/pages/client/RewardsPage.tsx",
+    "frontend/src/pages/client/WalletPage.tsx",
+    "frontend/src/utils/urlParams.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

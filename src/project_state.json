@@ -1,0 +1,344 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Global digital wallet and payment gateway platform (AXOPAY) with referral/reward system, supporting multi-currency transactions, ROI plans, binary matching engine, and comprehensive admin controls",
+  "architectural_notes": [
+    "Multi-module architecture: Public Website, Client Portal, Admin Panel",
+    "Wallet engine handles balances, transfers, fees, and multi-currency conversions",
+    "ROI engine automates daily returns based on plan duration and percentage",
+    "Binary matching engine pairs left/right team volumes with daily limits and carry-forward logic",
+    "Reward engine triggers milestone-based payouts automatically",
+    "Three wallet types recommended: Main, Earnings, Withdrawal",
+    "Separate authentication flows for clients (OTP) and admins (2FA + optional IP restriction)",
+    "Security stack: HTTPS encryption, password hashing, 2FA, withdrawal verification, fraud monitoring, rate limiting"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hero section background featuring secure shield and digital network abstract visualization with gradient overlay (hero-bg.dim_1920x1080.png)\n- Modern secure shield icon with digital elements for security section (shield-icon.dim_256x256.png)\n- Abstract global network illustration representing worldwide connectivity (global-network.dim_800x600.png)\n- Professional financial growth chart illustration for plans section (growth-chart.dim_600x400.png)\n- Binary tree structure diagram icon for referral system visualization (binary-tree.dim_400x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-public-website-landing-page-with-hero-section-displaying-headline-borderless-payments-limitless-possibilities-subtext-modern-digital-finance-platform-for-global-transactions-get-started-and-login-buttons-and-visual-elements-representing-secure-shield-and-digital-network",
+      "title": "Create public website landing page with hero section displaying headline 'Borderless Payments. Limitless Possibilities.', subtext 'Modern digital finance platform for global transactions', Get Started and Login buttons, and visual elements representing secure shield and digital network",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-about-section-on-public-website-explaining-axopay-capabilities-global-money-transfer-payment-receiving-instant-currency-swap-and-unified-multi-currency-wallet",
+      "title": "Create About section on public website explaining AXOPAY capabilities: global money transfer, payment receiving, instant currency swap, and unified multi-currency wallet",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-problem-solution-section-on-public-website-contrasting-problems-expensive-slow-complex-limited-access-with-solutions-international-payment-gateway-multi-currency-support-instant-swap-unified-wallet-cyber-security-focus",
+      "title": "Create Problem-Solution section on public website contrasting problems (Expensive, Slow, Complex, Limited access) with solutions (International payment gateway, Multi-currency support, Instant swap, Unified wallet, Cyber-security focus)",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-security-trust-section-on-public-website-highlighting-end-to-end-encryption-secure-infrastructure-fraud-detection-and-advanced-monitoring",
+      "title": "Create Security & Trust section on public website highlighting end-to-end encryption, secure infrastructure, fraud detection, and advanced monitoring",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-global-capability-section-on-public-website-explaining-international-payment-acceptance-multi-currency-processing-and-scalable-global-gateway",
+      "title": "Create Global Capability section on public website explaining international payment acceptance, multi-currency processing, and scalable global gateway",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-plans-benefits-section-on-public-website-displaying-three-investment-plans-begin-100-grow-300-peak-500-with-example-showing-5-daily-returns-for-30-days",
+      "title": "Create Plans & Benefits section on public website displaying three investment plans: BEGIN ($100), GROW ($300), PEAK ($500), with example showing 5% daily returns for 30 days",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-referral-system-section-on-public-website-explaining-10-direct-bonus-multi-level-earnings-binary-pairing-rewards-with-pair-income-10-30-50-daily-limits-and-milestone-rewards",
+      "title": "Create Referral System section on public website explaining 10% direct bonus, multi-level earnings, binary pairing rewards with pair income ($10/$30/$50), daily limits, and milestone rewards",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-final-cta-section-on-public-website-with-headline-join-axopay-today-secure-your-financial-future-and-create-account-and-login-buttons",
+      "title": "Create final CTA section on public website with headline 'Join AXOPAY Today — Secure Your Financial Future' and Create Account and Login buttons",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-client-authentication-system-with-login-form-accepting-email-username-and-password-otp-verification-step-and-forgot-password-functionality",
+      "title": "Implement client authentication system with login form accepting email/username and password, OTP verification step, and forgot password functionality",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-client-sign-up-system-collecting-name-email-phone-password-country-and-optional-referral-id-with-backend-actions-to-create-wallet-generate-unique-user-id-link-sponsor-and-verify-via-otp",
+      "title": "Implement client sign-up system collecting name, email, phone, password, country, and optional referral ID, with backend actions to create wallet, generate unique user ID, link sponsor, and verify via OTP",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-separate-admin-authentication-portal-with-login-form-accepting-admin-id-and-password-mandatory-2fa-verification-and-optional-ip-restriction-enforcement",
+      "title": "Implement separate admin authentication portal with login form accepting admin ID and password, mandatory 2FA verification, and optional IP restriction enforcement",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-client-dashboard-main-overview-displaying-wallet-balance-active-plan-roi-progress-total-earnings-referral-income-binary-income-withdrawable-balance-team-size-and-recent-transactions",
+      "title": "Create client dashboard main overview displaying wallet balance, active plan, ROI progress, total earnings, referral income, binary income, withdrawable balance, team size, and recent transactions",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-wallet-features-allowing-users-to-deposit-funds-withdraw-funds-perform-internal-transfers-between-users-convert-currencies-and-view-transaction-history-with-three-wallet-types-main-earnings-and-withdrawal",
+      "title": "Implement wallet features allowing users to deposit funds, withdraw funds, perform internal transfers between users, convert currencies, and view transaction history, with three wallet types: Main, Earnings, and Withdrawal",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-plan-management-system-allowing-users-to-purchase-or-upgrade-investment-plans-begin-100-grow-300-peak-500-view-roi-tracker-showing-daily-returns-progress-display-plan-expiry-date-and-provide-repurchase-option",
+      "title": "Implement plan management system allowing users to purchase or upgrade investment plans (BEGIN $100, GROW $300, PEAK $500), view ROI tracker showing daily returns progress, display plan expiry date, and provide repurchase option",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-referral-module-displaying-personal-referral-link-with-user-s-referral-id-downline-list-showing-directly-referred-users-team-tree-visualization-with-hierarchical-structure-and-referral-earnings-summary",
+      "title": "Implement referral module displaying personal referral link with user's referral ID, downline list showing directly referred users, team tree visualization with hierarchical structure, and referral earnings summary",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-binary-system-with-left-and-right-team-structure-pair-matching-logic-that-calculates-matching-volume-daily-payout-limits-binary-income-tracking-and-volume-carry-forward-for-unmatched-volume",
+      "title": "Implement binary system with left and right team structure, pair matching logic that calculates matching volume, daily payout limits, binary income tracking, and volume carry-forward for unmatched volume",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-rewards-section-displaying-milestone-rewards-with-progress-indicators-showing-advancement-toward-goals-and-claimed-rewards-history",
+      "title": "Implement rewards section displaying milestone rewards with progress indicators showing advancement toward goals, and claimed rewards history",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-earnings-and-transactions-section-displaying-income-categorized-by-type-roi-referral-binary-rewards-with-filters-for-date-range-transaction-type-and-status",
+      "title": "Implement earnings and transactions section displaying income categorized by type (ROI, Referral, Binary, Rewards) with filters for date range, transaction type, and status",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-profile-and-settings-section-allowing-users-to-update-personal-information-change-password-configure-security-settings-optionally-complete-kyc-verification-and-manage-notification-preferences",
+      "title": "Implement profile and settings section allowing users to update personal information, change password, configure security settings, optionally complete KYC verification, and manage notification preferences",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-admin-panel-overview-dashboard-displaying-total-users-count-active-users-count-new-registrations-count-total-deposits-amount-total-withdrawals-amount-platform-revenue-and-pending-approvals-count",
+      "title": "Create admin panel overview dashboard displaying total users count, active users count, new registrations count, total deposits amount, total withdrawals amount, platform revenue, and pending approvals count",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-user-management-allowing-viewing-user-details-activating-or-suspending-accounts-resetting-passwords-adjusting-wallet-balances-manually-modifying-active-plans-and-viewing-referral-trees",
+      "title": "Implement admin user management allowing viewing user details, activating or suspending accounts, resetting passwords, adjusting wallet balances manually, modifying active plans, and viewing referral trees",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-financial-control-allowing-approval-or-rejection-of-deposit-requests-with-optional-manual-entry-and-approval-or-rejection-of-withdrawal-requests-with-processing-status-tracking",
+      "title": "Implement admin financial control allowing approval or rejection of deposit requests with optional manual entry, and approval or rejection of withdrawal requests with processing status tracking",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-plan-management-allowing-creation-of-new-investment-plans-editing-existing-plans-roi-percentage-duration-price-and-enabling-or-disabling-plan-availability",
+      "title": "Implement admin plan management allowing creation of new investment plans, editing existing plans (ROI percentage, duration, price), and enabling or disabling plan availability",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-referral-and-binary-configuration-allowing-setting-of-referral-bonus-percentage-binary-pair-matching-rules-daily-payout-limits-and-volume-carry-forward-logic",
+      "title": "Implement admin referral and binary configuration allowing setting of referral bonus percentage, binary pair matching rules, daily payout limits, and volume carry-forward logic",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-rewards-management-allowing-definition-of-milestone-criteria-team-size-volume-earnings-configuration-of-reward-amounts-and-tracking-of-milestone-payouts",
+      "title": "Implement admin rewards management allowing definition of milestone criteria (team size, volume, earnings), configuration of reward amounts, and tracking of milestone payouts",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-reports-and-analytics-showing-revenue-reports-user-growth-charts-earnings-distribution-by-type-transaction-logs-with-filters-and-csv-export-functionality",
+      "title": "Implement admin reports and analytics showing revenue reports, user growth charts, earnings distribution by type, transaction logs with filters, and CSV export functionality",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-admin-notifications-system-allowing-creation-of-system-announcements-visible-to-all-users-sending-of-email-campaigns-to-selected-user-segments-and-platform-alerts-for-important-events",
+      "title": "Implement admin notifications system allowing creation of system announcements visible to all users, sending of email campaigns to selected user segments, and platform alerts for important events",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-design-system-to-the-entire-platform-with-a-professional-modern-aesthetic-suitable-for-financial-services-using-a-distinctive-color-palette-avoiding-blue-and-purple-unless-specified-consistent-typography-and-layout-patterns-that-reinforce-trust-and-clarity-throughout-the-public-website-client-dashboard-and-admin-panel",
+      "title": "Apply a cohesive visual design system to the entire platform with a professional, modern aesthetic suitable for financial services, using a distinctive color palette (avoiding blue and purple unless specified), consistent typography, and layout patterns that reinforce trust and clarity throughout the public website, client dashboard, and admin panel",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Public website with hero section, about, security, plans, and referral system info",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Authentication system with client login/signup (OTP verification) and admin portal (2FA, optional IP restriction)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Client dashboard with wallet balance, plan management, referral module, binary system, and earnings tracking",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Wallet features: deposit, withdraw, internal transfer, currency conversion, transaction history",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Admin panel with user management, financial control, plan configuration, and analytics",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "ROI engine for automated daily returns on investment plans (BEGIN $100, GROW $300, PEAK $500)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Binary matching engine with left/right team structure, pair matching, daily limits, and volume carry-forward",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Referral system with 10% direct bonus, multi-level earnings, and milestone rewards",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Reward engine for milestone-based payouts with progress tracking",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Implement ROI engine that automatically calculates and credits daily returns based on plan percentage (5% daily example) until plan expiry (30 days), crediting earnings to the Earnings wallet",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-27",
+      "summary": "Implement binary matching engine that matches left and right leg volumes, applies daily payout limits, credits binary earnings based on plan tier ($10 for BEGIN, $30 for GROW, $50 for PEAK per pair), and carries forward unmatched volume",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-29",
+      "summary": "Implement reward engine that triggers payouts automatically when users achieve defined milestones (team size, volume, earnings thresholds), crediting rewards to Earnings wallet",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-40",
+      "summary": "Implement wallet engine in backend handling balance tracking for three wallet types (Main, Earnings, Withdrawal), internal transfers between users, transaction fees calculation, and currency conversion using configured exchange rates",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-41",
+      "summary": "Implement security features including strong password hashing using industry-standard algorithms, withdrawal verification requiring OTP or 2FA, fraud monitoring for suspicious activity patterns, admin activity logging, rate limiting on sensitive endpoints, and automated backup systems",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "AXOPAY",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

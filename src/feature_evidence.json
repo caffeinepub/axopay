@@ -1,0 +1,590 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-public-website-landing-page-with-hero-section-displaying-headline-borderless-payments-limitless-possibilities-subtext-modern-digital-finance-platform-for-global-transactions-get-started-and-login-buttons-and-visual-elements-representing-secure-shield-and-digital-network",
+      "featureTitle": "Create public website landing page with hero section displaying headline 'Borderless Payments. Limitless Possibilities.', subtext 'Modern digital finance platform for global transactions', Get Started and Login buttons, and visual elements representing secure shield and digital network",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-about-section-on-public-website-explaining-axopay-capabilities-global-money-transfer-payment-receiving-instant-currency-swap-and-unified-multi-currency-wallet",
+      "featureTitle": "Create About section on public website explaining AXOPAY capabilities: global money transfer, payment receiving, instant currency swap, and unified multi-currency wallet",
+      "files": [
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-problem-solution-section-on-public-website-contrasting-problems-expensive-slow-complex-limited-access-with-solutions-international-payment-gateway-multi-currency-support-instant-swap-unified-wallet-cyber-security-focus",
+      "featureTitle": "Create Problem-Solution section on public website contrasting problems (Expensive, Slow, Complex, Limited access) with solutions (International payment gateway, Multi-currency support, Instant swap, Unified wallet, Cyber-security focus)",
+      "files": [
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-security-trust-section-on-public-website-highlighting-end-to-end-encryption-secure-infrastructure-fraud-detection-and-advanced-monitoring",
+      "featureTitle": "Create Security & Trust section on public website highlighting end-to-end encryption, secure infrastructure, fraud detection, and advanced monitoring",
+      "files": [
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-global-capability-section-on-public-website-explaining-international-payment-acceptance-multi-currency-processing-and-scalable-global-gateway",
+      "featureTitle": "Create Global Capability section on public website explaining international payment acceptance, multi-currency processing, and scalable global gateway",
+      "files": [
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-plans-benefits-section-on-public-website-displaying-three-investment-plans-begin-100-grow-300-peak-500-with-example-showing-5-daily-returns-for-30-days",
+      "featureTitle": "Create Plans & Benefits section on public website displaying three investment plans: BEGIN ($100), GROW ($300), PEAK ($500), with example showing 5% daily returns for 30 days",
+      "files": [
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-referral-system-section-on-public-website-explaining-10-direct-bonus-multi-level-earnings-binary-pairing-rewards-with-pair-income-10-30-50-daily-limits-and-milestone-rewards",
+      "featureTitle": "Create Referral System section on public website explaining 10% direct bonus, multi-level earnings, binary pairing rewards with pair income ($10/$30/$50), daily limits, and milestone rewards",
+      "files": [
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-final-cta-section-on-public-website-with-headline-join-axopay-today-secure-your-financial-future-and-create-account-and-login-buttons",
+      "featureTitle": "Create final CTA section on public website with headline 'Join AXOPAY Today — Secure Your Financial Future' and Create Account and Login buttons",
+      "files": [
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-client-authentication-system-with-login-form-accepting-email-username-and-password-otp-verification-step-and-forgot-password-functionality",
+      "featureTitle": "Implement client authentication system with login form accepting email/username and password, OTP verification step, and forgot password functionality",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/ForgotPasswordPage.tsx",
+        "frontend/src/pages/LoginPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-client-sign-up-system-collecting-name-email-phone-password-country-and-optional-referral-id-with-backend-actions-to-create-wallet-generate-unique-user-id-link-sponsor-and-verify-via-otp",
+      "featureTitle": "Implement client sign-up system collecting name, email, phone, password, country, and optional referral ID, with backend actions to create wallet, generate unique user ID, link sponsor, and verify via OTP",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/SignupPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-separate-admin-authentication-portal-with-login-form-accepting-admin-id-and-password-mandatory-2fa-verification-and-optional-ip-restriction-enforcement",
+      "featureTitle": "Implement separate admin authentication portal with login form accepting admin ID and password, mandatory 2FA verification, and optional IP restriction enforcement",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/AdminLoginPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-client-dashboard-main-overview-displaying-wallet-balance-active-plan-roi-progress-total-earnings-referral-income-binary-income-withdrawable-balance-team-size-and-recent-transactions",
+      "featureTitle": "Create client dashboard main overview displaying wallet balance, active plan, ROI progress, total earnings, referral income, binary income, withdrawable balance, team size, and recent transactions",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/DashboardPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-wallet-features-allowing-users-to-deposit-funds-withdraw-funds-perform-internal-transfers-between-users-convert-currencies-and-view-transaction-history-with-three-wallet-types-main-earnings-and-withdrawal",
+      "featureTitle": "Implement wallet features allowing users to deposit funds, withdraw funds, perform internal transfers between users, convert currencies, and view transaction history, with three wallet types: Main, Earnings, and Withdrawal",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/WalletPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-plan-management-system-allowing-users-to-purchase-or-upgrade-investment-plans-begin-100-grow-300-peak-500-view-roi-tracker-showing-daily-returns-progress-display-plan-expiry-date-and-provide-repurchase-option",
+      "featureTitle": "Implement plan management system allowing users to purchase or upgrade investment plans (BEGIN $100, GROW $300, PEAK $500), view ROI tracker showing daily returns progress, display plan expiry date, and provide repurchase option",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/PlansPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-referral-module-displaying-personal-referral-link-with-user-s-referral-id-downline-list-showing-directly-referred-users-team-tree-visualization-with-hierarchical-structure-and-referral-earnings-summary",
+      "featureTitle": "Implement referral module displaying personal referral link with user's referral ID, downline list showing directly referred users, team tree visualization with hierarchical structure, and referral earnings summary",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/ReferralPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-binary-system-with-left-and-right-team-structure-pair-matching-logic-that-calculates-matching-volume-daily-payout-limits-binary-income-tracking-and-volume-carry-forward-for-unmatched-volume",
+      "featureTitle": "Implement binary system with left and right team structure, pair matching logic that calculates matching volume, daily payout limits, binary income tracking, and volume carry-forward for unmatched volume",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/BinaryPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-rewards-section-displaying-milestone-rewards-with-progress-indicators-showing-advancement-toward-goals-and-claimed-rewards-history",
+      "featureTitle": "Implement rewards section displaying milestone rewards with progress indicators showing advancement toward goals, and claimed rewards history",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/RewardsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-earnings-and-transactions-section-displaying-income-categorized-by-type-roi-referral-binary-rewards-with-filters-for-date-range-transaction-type-and-status",
+      "featureTitle": "Implement earnings and transactions section displaying income categorized by type (ROI, Referral, Binary, Rewards) with filters for date range, transaction type, and status",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/EarningsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-profile-and-settings-section-allowing-users-to-update-personal-information-change-password-configure-security-settings-optionally-complete-kyc-verification-and-manage-notification-preferences",
+      "featureTitle": "Implement profile and settings section allowing users to update personal information, change password, configure security settings, optionally complete KYC verification, and manage notification preferences",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/client/ProfilePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-admin-panel-overview-dashboard-displaying-total-users-count-active-users-count-new-registrations-count-total-deposits-amount-total-withdrawals-amount-platform-revenue-and-pending-approvals-count",
+      "featureTitle": "Create admin panel overview dashboard displaying total users count, active users count, new registrations count, total deposits amount, total withdrawals amount, platform revenue, and pending approvals count",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/AdminDashboard.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-admin-user-management-allowing-viewing-user-details-activating-or-suspending-accounts-resetting-passwords-adjusting-wallet-balances-manually-modifying-active-plans-and-viewing-referral-trees",
+      "featureTitle": "Implement admin user management allowing viewing user details, activating or suspending accounts, resetting passwords, adjusting wallet balances manually, modifying active plans, and viewing referral trees",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/UserManagementPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-24"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-admin-financial-control-allowing-approval-or-rejection-of-deposit-requests-with-optional-manual-entry-and-approval-or-rejection-of-withdrawal-requests-with-processing-status-tracking",
+      "featureTitle": "Implement admin financial control allowing approval or rejection of deposit requests with optional manual entry, and approval or rejection of withdrawal requests with processing status tracking",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/FinancialControlPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-25"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-admin-plan-management-allowing-creation-of-new-investment-plans-editing-existing-plans-roi-percentage-duration-price-and-enabling-or-disabling-plan-availability",
+      "featureTitle": "Implement admin plan management allowing creation of new investment plans, editing existing plans (ROI percentage, duration, price), and enabling or disabling plan availability",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/PlanManagementPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-26"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-admin-referral-and-binary-configuration-allowing-setting-of-referral-bonus-percentage-binary-pair-matching-rules-daily-payout-limits-and-volume-carry-forward-logic",
+      "featureTitle": "Implement admin referral and binary configuration allowing setting of referral bonus percentage, binary pair matching rules, daily payout limits, and volume carry-forward logic",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/ReferralBinaryConfigPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-27"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-admin-rewards-management-allowing-definition-of-milestone-criteria-team-size-volume-earnings-configuration-of-reward-amounts-and-tracking-of-milestone-payouts",
+      "featureTitle": "Implement admin rewards management allowing definition of milestone criteria (team size, volume, earnings), configuration of reward amounts, and tracking of milestone payouts",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/RewardsManagementPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-28"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-admin-reports-and-analytics-showing-revenue-reports-user-growth-charts-earnings-distribution-by-type-transaction-logs-with-filters-and-csv-export-functionality",
+      "featureTitle": "Implement admin reports and analytics showing revenue reports, user growth charts, earnings distribution by type, transaction logs with filters, and CSV export functionality",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/ReportsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-29"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-admin-notifications-system-allowing-creation-of-system-announcements-visible-to-all-users-sending-of-email-campaigns-to-selected-user-segments-and-platform-alerts-for-important-events",
+      "featureTitle": "Implement admin notifications system allowing creation of system announcements visible to all users, sending of email campaigns to selected user segments, and platform alerts for important events",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/admin/NotificationsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-30"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-cohesive-visual-design-system-to-the-entire-platform-with-a-professional-modern-aesthetic-suitable-for-financial-services-using-a-distinctive-color-palette-avoiding-blue-and-purple-unless-specified-consistent-typography-and-layout-patterns-that-reinforce-trust-and-clarity-throughout-the-public-website-client-dashboard-and-admin-panel",
+      "featureTitle": "Apply a cohesive visual design system to the entire platform with a professional, modern aesthetic suitable for financial services, using a distinctive color palette (avoiding blue and purple unless specified), consistent typography, and layout patterns that reinforce trust and clarity throughout the public website, client dashboard, and admin panel",
+      "files": [
+        "frontend/src/components/layout/AdminLayout.tsx",
+        "frontend/src/components/layout/MainLayout.tsx",
+        "frontend/src/components/layout/PublicLayout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-33"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
